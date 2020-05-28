@@ -1,0 +1,49 @@
+{%extends 'portafolio/base.html'%}
+{%load static%}
+
+
+<head>
+  {% block styles %}
+  <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+  {% endblock %}
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+</head>
+{%block content%}
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="{% static 'images/cloud.png' %}" alt="cloud-image">
+    <h1>I'm Daniel.</h1>
+    <h2>a <span class="pro">web</span> developer in progress.</h2>
+    <img class="bottom-cloud" src="{% static 'images/cloud.png' %}" alt="cloud-image">
+    <img src="{% static 'images/mountain.png' %}" alt="mountain-image">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <h2>Hello!</h2>
+      <img class="pro_pic" src="{% static 'images/daniel copy.JPG' %}" alt="profile-pic" height="200" width="150">
+      <p class="desc"> Professional in Industrial Engineering of the University of Los Andes with a master’s degree from
+        the University of Surrey on Entrepreneurship. Passionate about technology, innovation and self-development. Able
+        to work under
+        pressure and with the ability to work in teams and for results. <br /> Proper management of interpersonal
+        relationships and adaptability to change. Always eager and open to learning new skills for improving and growing
+        as a person. I’m recursive, responsible,
+        honest and dynamic.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="sk1" src="{% static 'images/ux.png' %}" alt="webpage-pic">
+        <h3>Web Development</h3>
+        <p class="webd">I'm currently learning all the different layers for creating stunning webpages and understanding
+          JavaScript</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+  {%endblock content%}
+</body>
+
+</html>
