@@ -6,44 +6,67 @@
   {% block styles %}
   <link rel="stylesheet" href="{% static 'css/styles.css'%}">
   {% endblock %}
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
 </head>
-{%block content%}
+
 
 <body>
-  <div class="top-container">
-    <img class="top-cloud" src="{% static 'images/cloud.png' %}" alt="cloud-image">
-    <h1>I'm Daniel.</h1>
-    <h2>a <span class="pro">web</span> developer in progress.</h2>
-    <img class="bottom-cloud" src="{% static 'images/cloud.png' %}" alt="cloud-image">
-    <img src="{% static 'images/mountain.png' %}" alt="mountain-image">
-  </div>
-
-  <div class="middle-container">
-    <div class="profile">
-      <h2>Hello!</h2>
-      <img class="pro_pic" src="{% static 'images/daniel copy.JPG' %}" alt="profile-pic" height="200" width="150">
-      <p class="desc"> Professional in Industrial Engineering of the University of Los Andes with a master’s degree from
-        the University of Surrey on Entrepreneurship. Passionate about technology, innovation and self-development. Able
-        to work under
-        pressure and with the ability to work in teams and for results. <br /> Proper management of interpersonal
-        relationships and adaptability to change. Always eager and open to learning new skills for improving and growing
-        as a person. I’m recursive, responsible,
-        honest and dynamic.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="sk1" src="{% static 'images/ux.png' %}" alt="webpage-pic">
-        <h3>Web Development</h3>
-        <p class="webd">I'm currently learning all the different layers for creating stunning webpages and understanding
-          JavaScript</p>
+  <header>{%block navbar%}
+    <div class="navbar navbar-light bg-light shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="{% url 'portafolio-home' %}" class="navbar-brand d-flex align-items-center">
+          <svg class="bi bi-folder-check" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M9.828 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91H9v1H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181L15.546 8H14.54l.265-2.91A1 1 0 0 0 13.81 4H9.828zm-2.95-1.707L7.587 3H2.19c-.24 0-.47.042-.684.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293z" />
+            <path fill-rule="evenodd"
+              d="M15.854 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708l1.146 1.147 2.646-2.647a.5.5 0 0 1 .708 0z" />
+          </svg>
+          <strong>Portafolio</strong>
+        </a>
+        <div class="nav-bar-nav">
+          <a class="nav-item nav-link" href="{% url 'portafolio-work' %}">Work</a>
+          <a class="nav-item nav-link" href="">About</a>
+        </div>
       </div>
     </div>
-    <hr>
+    <!-- {%block button%}{%endblock button%} -->
+    {%endblock navbar%}</header>
+  {%block content%}
+  <div class="landing container">
+    <div class="landingWrapper">
+      <div class="landingL">
+        <h1>Daniel Torrijos.</h1>
+        <p>Hi there! I'm Daniel a self-taught backend developer with experience in Django Framework.</p>
+        <ul>
+          <li>
+            <p>A goal-oriented, quality driven professional with a constant desire to learn new skills.</p>
+          </li>
+          <li>
+            <p>Experience in data analysis, report generation, statistical techniques, and python programming language.
+            </p>
+          </li>
+          <li>
+            <p>Motivational team player with the interpersonal and communication skills <br> to work effectively with
+              diverse team members in collaborative
+              environments.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="landingR">
+        <img class="pro_pic row" src="{% static 'images/daniel copy.JPG' %}" alt="profile-pic">
+      </div>
+    </div>
   </div>
-  {%endblock content%}
+  <divc class="skills">
+    <h2>Skills</h2>
+    <p>Starting as a web developer using <br> these programs.</p>
+    <div class="programs">
+      <img src="" alt="python icon">
+      <img src="" alt="django icon">
+      <img src="" alt="sql icon">
+    </div>
+    </div>
+    {%endblock content%}
 </body>
 
 </html>

@@ -4,6 +4,26 @@
 <link rel="stylesheet" href="{% static 'css/main.css' %}">
 {% endblock %}
 
+{%block navbar%}
+<div class="navbar navbar-dark bg-dark shadow-sm">
+  <div class="container d-flex justify-content-between">
+    <a href="{% url 'portafolio-home' %}" class="navbar-brand d-flex align-items-center">
+      <svg class="bi bi-folder-check" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M9.828 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91H9v1H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181L15.546 8H14.54l.265-2.91A1 1 0 0 0 13.81 4H9.828zm-2.95-1.707L7.587 3H2.19c-.24 0-.47.042-.684.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293z" />
+        <path fill-rule="evenodd"
+          d="M15.854 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708l1.146 1.147 2.646-2.647a.5.5 0 0 1 .708 0z" />
+      </svg>
+      <strong>Portafolio</strong>
+    </a>
+    <div class="nav-bar-nav">
+      <a class="nav-item nav-link" href="{% url 'portafolio-work' %}">Work</a>
+      <a class="nav-item nav-link" href="">About</a>
+    </div>
+  </div>
+</div>
+{%endblock navbar%}
 <!-- <div class="collapse bg-info" id="navbarHeader">
   <div class="container">
     <div class="row">
@@ -35,7 +55,13 @@
 </button>
 {%endblock button%}
 {%block jumbotron%}
-<section class="jumbotron text-center">
+<style>
+  .JumboHeaderImg {
+    background-image: url("media/images/zelda.jpg");
+    background-size: cover;
+  }
+</style>
+<section class="jumbotron text-center JumboHeaderImg">
   <div class="container">
     <h1 class="jumbotron-heading">Enter Web Development</h1>
     <p class="lead text-muted"></p>
@@ -61,6 +87,7 @@
           </div>
           <div class="card text-dark bg-light">
             <div class="card-body">
+              <small class='text-muted'>{{portafolio.date_posted|date:"F d, Y"}}</small>
               <p class="card-text">{{portafolio.description}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">

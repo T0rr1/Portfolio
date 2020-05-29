@@ -1,125 +1,97 @@
-body {
+/* Global */
+* {
   margin: 0;
-  text-align: center;
-  font-family: 'Merriweather', serif;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
-p {
-  line-height: 2;
-  color: #40514E;
-
+html {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 100;
 }
 
-hr {
-  color: #EAF6F6;
-  border-style: dotted none none none;
-  border-width: 7px;
-  width: 5%;
-  margin-top: 30px;
+body {
+  margin: auto;
+  background-color: #3498db;
+  background-size: cover;
+  background-position: top;
+  color: #ecf0f1;
 }
 
 h1 {
-  font-size: 5.625rem;
-  color: #66BFBF;
-  margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-size: 40px;
+  font-weight: 400;
+  color: #17191A;
 }
 
 h2 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 2.5rem;
-  margin-top: 2.6rem;
-  color: #66BFBF;
-  font-weight: normal;
+  font-size: 35px;
+  font-weight: 400;
+  color: #17191A;
 }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #11999E;
+h5 {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #17191A;
 }
 
-a {
-  color: #11999E;
-  text-decoration: none;
+p {
+  color: #8f9ea5;
+  opacity: 0.8;
+  margin-top: 5px;
+  font-weight: 300;
 }
 
-.top-container {
-  background-color: #EAF6F6;
+/* Landing */
+.landing {
   position: relative;
 }
 
-.middle-container {
-  margin: 100px auto;
-
+.landingWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-.bottom-container {
-  background-color: #66BFBF;
-  padding-top: 50px;
+ul {
+  list-style: circle;
+  margin-top: 30px;
+  line-height: 30px;
 }
 
-.pro {
-  text-decoration: underline;
+.landingL {
+  margin-top: 4em;
 }
 
-.bottom-cloud {
-  position: absolute;
-  right: 400px;
-  top: 50px;
+/* Skills */
+.skills {
+  text-align: center;
+  margin-bottom: 20em;
 }
 
-.top-cloud {
-  position: absolute;
-  left: 400px;
-  bottom: 300px;
+.skills p {
+  margin-bottom: 30px;
+}
+
+.skills img {
+  width: 40px;
+  margin: 0 15px;
+}
+
+[role=main] {
+  background-color: white;
 }
 
 .pro_pic {
-  width: 13%;
+  filter: grayscale(100%);
+  border-radius: 50%;
   height: auto;
-  padding-top: 5%;
-  border-radius: 30%;
-  opacity: 0.9;
-  float: left;
-  margin-left: 100px;
-}
-
-.skill-row {
-  line-height: 2;
-  width: 50%;
-  margin: 100px auto;
-  text-align: left;
-}
-
-.sk1 {
-  width: 25%;
-  margin-right: 30px;
-  float: left;
-}
-
-.sk2 {
-  width: 25%;
-  margin-left: 30px;
-  float: right;
-}
-
-.webd {
-  clear: left;
-}
-
-.fmd {
-  clear: right;
-}
-
-.desc {
-  width: 50%;
-  margin: auto;
-
-}
-
-.profile {
-  width: 70%;
-  margin: 100px auto;
+  width: 200px;
 }
 
 .navbar-brand {
