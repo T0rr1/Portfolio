@@ -1,24 +1,23 @@
 from django.shortcuts import render
+from django.views.generic import ListView, DetailView
 from .models import Project
-
-# portafolios = [
-#     {
-#         "title": "Credit Calculator",
-#         "description": "This project calculates annuity payment and differentiated payment",
-#         "image": "raw.jpg",
-#     },
-#     {
-#         "title": "Tic-Tac-Toe",
-#         "description": "A classic tic-tac-toe via command line programmed with python",
-#         "image": "zelda.jpg",
-#     },
-# ]
 
 
 def home(request):
     return render(
         request, "portafolio/home.html", {"portafolios": Project.objects.all()}
     )
+
+
+class ProjectListView(ListView):
+    model = Project
+    template_name = "portafolio/home.html"
+    context_object_name = "portafolios"
+    ordering = "-date_posted"
+
+
+class DetailListView(DetailView):
+    model = Project
 
 
 def work(request):

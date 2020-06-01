@@ -1,0 +1,9 @@
+@import 'main.css';
+
+.embed-responsive {
+    height: 100vh;
+}
+
+[role=main] {
+    background-color: white;
+}

@@ -10,12 +10,16 @@
 }
 
 html {
+
+  position: relative;
+  min-height: 100%;
   font-family: 'Cabin', sans-serif;
   font-weight: 100;
 }
 
 body {
-  margin: auto;
+  margin: 0 0 100px;
+  /* bottom = footer height */
   background-color: #3498db;
   background-size: cover;
   background-position: top;
@@ -47,6 +51,12 @@ p {
   font-weight: 300;
 }
 
+ul {
+  list-style: circle;
+  margin-top: 30px;
+  line-height: 30px;
+}
+
 /* Landing */
 .landing {
   position: relative;
@@ -56,12 +66,6 @@ p {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-}
-
-ul {
-  list-style: circle;
-  margin-top: 30px;
-  line-height: 30px;
 }
 
 .landingL {
@@ -79,8 +83,12 @@ ul {
 }
 
 .skills img {
-  width: 40px;
   margin: 0 15px;
+}
+
+.programs {
+  background-color: white;
+  margin-bottom: 20em;
 }
 
 [role=main] {
@@ -120,7 +128,11 @@ ul {
 .footer {
   background: #061D25;
   padding: 10px 0;
-
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
 }
 
 .footer a {

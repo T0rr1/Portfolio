@@ -87,13 +87,18 @@
           </div>
           <div class="card text-dark bg-light">
             <div class="card-body">
-              <small class='text-muted'>{{portafolio.date_posted|date:"F d, Y"}}</small>
-              <p class="card-text">{{portafolio.description}}</p>
+              <small><a target="blank" href="{{portafolio.link}}">Learn about the code</a></small>
+              <p class="card-text">{{portafolio.summary}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-info">View</button>
+                  <a class="btn btn-outline-info" href="{% url 'project-detail' portafolio.id %}" role="button">Learn
+                    More</a>
                 </div>
               </div>
+
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">{{portafolio.date_posted|date:"F d, Y"}}</small>
             </div>
           </div>
         </div>
