@@ -1,9 +1,29 @@
 @import 'main.css';
 
-.embed-responsive {
-    height: 100vh;
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
 }
 
 [role=main] {
-    background-color: white;
+    background-color: #343a40;
+}
+
+.card-text {
+    color: black;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.inner {
+    width: 70%;
+}
+
+.embed-responsive-item {
+    border-radius: 20px;
+    border: 5px;
 }

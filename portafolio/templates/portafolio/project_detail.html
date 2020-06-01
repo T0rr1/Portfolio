@@ -33,10 +33,13 @@
 {%block content%}
 <div class="container bg-dark">
     <h2>{{object.title}}</h2>
-    <div class=" embed-responsive embed-responsive-16by9 rounded">
-        <div><img class=" embed-responsive-item" src="{{object.image.url}}"></div>
-    </div>
-    <div class="text-dark bg-light rounded" <p class="text-justify">{{object.description}}</p>
+    <small><a target="blank" href="{{object.link}}">Learn about the code</a></small>
+    <div class="container inner bg-dark">
+        <div class=" card embed-responsive embed-responsive-16by9 rounded">
+            <div><img class=" embed-responsive-item" src="{{object.image.url}}"></div>
+        </div>
+        <div class="card-text bg-light rounded" <p class="text-justify">{{object.description}}</p>
+        </div>
     </div>
 </div>
 {%endblock content%}

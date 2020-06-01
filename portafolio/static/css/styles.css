@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: 400;
   color: #17191A;
 }
@@ -45,6 +45,7 @@ h5 {
 }
 
 p {
+  font-size: 1vw;
   color: #8f9ea5;
   opacity: 0.8;
   margin-top: 5px;
@@ -53,7 +54,7 @@ p {
 
 ul {
   list-style: circle;
-  margin-top: 30px;
+  margin-left: 30px;
   line-height: 30px;
 }
 
@@ -68,8 +69,8 @@ ul {
   margin-top: 40px;
 }
 
-.landingL {
-  margin-top: 4em;
+.container.landingL {
+  padding-right: 100px;
 }
 
 /* Skills */
@@ -93,6 +94,19 @@ ul {
 
 [role=main] {
   background-color: white;
+}
+
+@media (min-width: 768px) {
+  .pro_pic {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .pro_pic {
