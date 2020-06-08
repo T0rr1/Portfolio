@@ -20,7 +20,7 @@
           <path fill-rule="evenodd"
             d="M15.854 10.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708l1.146 1.147 2.646-2.647a.5.5 0 0 1 .708 0z" />
         </svg>
-        <strong>Portafolio</strong>
+        <strong>Portfolio</strong>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,53 +36,155 @@
             <a class="nav-item nav-link" href="{% url 'portafolio-work' %}">Work<span
                 class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="{% url 'portafolio-work' %}">About</a>
-          </li>
         </ul>
       </div>
     </nav>
     {%endblock navbar%}</header>
   {%block content%}
-  <div class="landing container">
-    <div class="landingWrapper">
-      <div class="landingL container">
-        <h1>Daniel Torrijos.</h1>
-        <p>Hi there! I'm Daniel a self-taught backend developer with experience in Django Framework.</p>
-        <ul>
-          <li>
-            <p>A goal-oriented, quality driven professional with a constant desire to learn new skills.</p>
-          </li>
-          <li>
-            <p>Experience in data analysis, report generation, statistical techniques, and python programming language.
-            </p>
-          </li>
-          <li>
-            <p>Motivational team player with the interpersonal and communication skills <br> to work effectively with
-              diverse team members in collaborative
-              environments.</p>
-          </li>
-        </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card card-body">
+          <img class="pro_pic" src="{% static 'images/daniel_torrijos.jpg' %}" alt="profile-pic">
+          <hr>
+          <h5 class="card-subtitle mt-1 mb-1 text-muted"> Dedicated bilingual Industrial Engineer with high educational
+            qualifications
+            and steadfast
+            work ethic
+          </h5>
+        </div>
       </div>
-      <div class="landingR">
-        <img class="pro_pic row" src="{% static 'images/daniel copy.JPG' %}" alt="profile-pic">
+      <div class="col-md-9">
+        <div class="card card-body">
+          <h1 class="card-title">Daniel Torrijos.</h1>
+          <p class='card-text'>Hi there! I'm Daniel a self-taught backend developer with experience in Django Framework.
+          </p>
+          <ul class="card-text mr-5 ml-5">
+            <li>
+              <p class="card-text"> A goal-oriented, quality driven professional with a constant
+                desire to learn new
+                skills.</p>
+            </li>
+            <li>
+              <p class="card-text">Experience in data analysis, report generation, statistical techniques, and python
+                programming
+                language.
+              </p>
+            </li>
+            <li>
+              <p class="card-text">Motivational team player with the interpersonal and communication skills <br> to work
+                effectively
+                with
+                diverse team members in collaborative
+                environments.</p>
+            </li>
+            <li>
+              <p class="card-text">
+                Accustomed to managing multiple competing deadlines and projects in time-sensitive environments while
+                guaranteeing quality and on-time completion.
+              </p>
+            </li>
+            <li>
+              <p class="card-text">
+                Exceptional educational qualifications including a Master of Science in Entrepreneurship from the
+                University of Surrey.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="skills container">
-    <h2>Skills</h2>
-    <p>Starting as a web developer using <br> these programs.</p>
-    <div class="programs">
-      <a target="blank" href="https://icons8.com/icon/13441/python"><img
-          src="https://img.icons8.com/color/48/000000/python.png" /></a>
-      <a target="blank" href="https://icons8.com/icon/qV-JzWYl9dzP/django"><img
-          src="https://img.icons8.com/color/48/000000/django.png" /></a>
-      <a target="blank" href="https://icons8.com/icon/38561/postgresql"><img
-          src="https://img.icons8.com/color/48/000000/postgreesql.png" /></a>
-    </div>
-  </div>
-
-  {%endblock content%}
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card card-body">
+          <div class="skills container">
+            <h2 class="card-title">Skills</h2>
+            <p class="card-text">I have experience using these programs:</p>
+            <div class="programs">
+              <a target="blank" href="https://icons8.com/icon/13441/python"><img
+                  src="https://img.icons8.com/color/48/000000/python.png" /></a>
+              <a target="blank" href="https://icons8.com/icon/21278/css3"><img
+                  src="https://img.icons8.com/color/48/000000/css3.png" /></a>
+              <a target="blank" href="https://icons8.com/icon/20909/html-5"> <img
+                  src="https://img.icons8.com/color/48/000000/html-5.png" /></a>
+              <a target="blank" href="https://icons8.com/icon/qV-JzWYl9dzP/django"><img
+                  src="https://img.icons8.com/color/48/000000/django.png" /></a>
+              <a target="blank" href="https://icons8.com/icon/38561/postgresql"><img
+                  src="https://img.icons8.com/color/48/000000/postgreesql.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card card-body">
+          <h2 class="card-title">Core Competencies</h2>
+          <ul class="competencies">
+            <div>
+              <li class="card-text">Python Developer</li>
+              <li class="card-text">Business Acumen</li>
+              <li class="card-text">Detail-Oriented</li>
+              <li class="card-text">Communication</li>
+            </div>
+            <div>
+              <li class="card-text">Complex Problem Solving</li>
+              <li class="card-text">GIT</li>
+              <li class="card-text">HTML/CSS</li>
+              <li class="card-text">Database Management</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h2 class="card-title">Education</h2>
+          <div class="card-image education">
+            <h6>University of Surrey, UK: 2018</h6>
+            <small><strong>Master of Science – Entrepreneurship(GPA: 4.0)</strong> </small>
+            <ul>
+              <li class="card-text">Relevant Coursework: Project Management, Innovation Management</li>
+              <li class="card-text">Honors: Merit Achievement</li>
+            </ul>
+          </div>
+          <div class="card-image education">
+            <h6>Universidad de los Andes, Colombia: 2014</h6>
+            <small><strong>Bachelor of Science – Industrial Engineering (GPA: 3.54)</strong> </small>
+            <ul>
+              <li class="card-text">Relevant Coursework: Algorithms, Optimization, Simulation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h2 class="card-title">Work Experience</h2>
+          <div class="work">
+            <h6>Talend | California | Oct 2019 – Sept 2019</h6>
+            <small><strong>Sales Development</strong> </small>
+            <ul>
+              <li class="card-text">Prospected hundreds of leads through a multi-channel approach, including cold
+                calling, emailing, videos, and LinkedIn messaging.
+                attending a webinar</li>
+              <li class="card-text">Collaborated and competed within an SDR team setting</li>
+              <li class="card-text">Built and refined call scripts; designed email campaigns; created prospecting
+                videos</li>
+            </ul>
+          </div>
+          <div class="work">
+            <h6>W. Colombia S.A.S | Colombia | 2014 – 2017</h6>
+            <small><strong>Operations and Inventory Director </strong> </small>
+            <ul>
+              <li class="card-text">Oversaw inventory management and control for critical company products,
+                including slot machines and games </li>
+              <li class="card-text">Analyzed slot machine performance, evaluating the results on a case-by-case and
+                location-by-location
+                basis </li>
+              <li class="card-text">Directed the development and management of a web platform that collects readings
+                from slot machine meters </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {%endblock content%}
 </body>
 
 </html>

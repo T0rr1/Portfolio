@@ -3,6 +3,7 @@ body {
   /* bottom = footer height */
   background-color: #3498db;
   color: #ecf0f1;
+  font-size: 100%;
 }
 
 html {

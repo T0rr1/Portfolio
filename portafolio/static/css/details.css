@@ -5,7 +5,6 @@ img {
     max-width: 100%;
     height: auto;
     width: auto\9;
-    /* ie8 */
 }
 
 [role=main] {
@@ -26,4 +25,46 @@ img {
 .embed-responsive-item {
     border-radius: 20px;
     border: 5px;
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        width: 100%;
+    }
+
+    .inner {
+        width: 100%;
+    }
+
+    body {
+        background-color: #343a40
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+    }
+
+    .inner {
+        width: 100%;
+    }
+
+    body {
+        background-color: #343a40
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .container {
+        width: 100%;
+    }
+
+    .inner {
+        width: 100%;
+    }
+
+    body {
+        background-color: #343a40
+    }
 }
