@@ -3,12 +3,15 @@ body {
   /* bottom = footer height */
   background-color: #3498db;
   color: #ecf0f1;
+  font-family: 'Cabin',
+    sans-serif;
   font-size: 100%;
 }
 
 html {
   position: relative;
   min-height: 100%;
+  font-family: 'Cabin', sans-serif;
 }
 
 footer {
