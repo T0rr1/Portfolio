@@ -1,10 +1,7 @@
 @import 'main.css';
 
-
-img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
+body {
+    background-color: #343a40 !important;
 }
 
 [role=main] {
@@ -12,59 +9,22 @@ img {
 }
 
 .card-text {
-    color: black;
+    color: white;
     text-align: justify;
     padding: 10px;
     margin-top: 20px;
 }
 
-.inner {
-    width: 70%;
-}
-
-.embed-responsive-item {
-    border-radius: 20px;
-    border: 5px;
-}
-
-@media screen and (max-width: 420px) {
-    .container {
-        width: 100%;
-    }
-
-    .inner {
-        width: 100%;
-    }
-
-    body {
-        background-color: #343a40
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .container {
-        width: 100%;
-    }
-
-    .inner {
-        width: 100%;
-    }
-
-    body {
-        background-color: #343a40
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    .container {
-        width: 100%;
-    }
-
-    .inner {
-        width: 100%;
-    }
-
-    body {
-        background-color: #343a40
-    }
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: initial;
+    height: 100%;
+    border: 0;
 }

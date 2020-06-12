@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from .models import Project
 
+# {"portafolios": Project.objects.all()}
+
 
 def home(request):
-    return render(
-        request, "portafolio/home.html", {"portafolios": Project.objects.all()}
-    )
+    return render(request, "portafolio/landing.html")
 
 
 class ProjectListView(ListView):
@@ -20,5 +20,5 @@ class DetailListView(DetailView):
     model = Project
 
 
-def work(request):
+def cv(request):
     return render(request, "portafolio/index.html")
