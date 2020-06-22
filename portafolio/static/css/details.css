@@ -15,6 +15,10 @@ body {
     margin-top: 20px;
 }
 
+.text-justify {
+    font-size: 1.2rem;
+}
+
 .embed-responsive .embed-responsive-item,
 .embed-responsive embed,
 .embed-responsive iframe,
