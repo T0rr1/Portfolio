@@ -494,8 +494,8 @@ small {
     font-size: 3vw;
   }
 
-  .info ul {
-    margin: 0;
+  #small-info ul {
+    margin: auto;
     list-style: none;
     color: transparent;
   }
