@@ -495,9 +495,8 @@ small {
   }
 
   #small-info ul {
-    margin: auto;
-    list-style: none;
-    color: transparent;
+    margin: auto !important;
+    list-style: none !important;
   }
 
   .education li {
