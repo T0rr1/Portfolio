@@ -292,7 +292,7 @@ small {
   }
 
   #summary ul {
-    line-height: 20px;
+    line-height: 25px;
   }
 
   #experience li {
@@ -494,9 +494,10 @@ small {
     font-size: 3vw;
   }
 
-  .info {
+  .info ul {
     margin: 0;
     list-style: none;
+    color: transparent;
   }
 
   .education li {
